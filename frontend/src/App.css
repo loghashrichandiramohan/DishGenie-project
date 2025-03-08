@@ -1,0 +1,878 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10%;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+}
+
+.hero-section .name {
+  width: 80%;
+  max-width: 300px;
+}
+
+.h-line {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-r, .button-l {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-r {
+  background-color: #ff5e62;
+  color: white;
+}
+
+.button-l {
+  background-color: white;
+  color: #ff5e62;
+  border: 2px solid #ff5e62;
+}
+
+.button-r:hover, .button-l:hover {
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Search Section */
+.search-section {
+  padding: 50px 10%;
+  text-align: center;
+  background: #ffefe7;
+}
+
+.search-input {
+  padding: 12px;
+  width: 300px;
+  border: 2px solid #ff5e62;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 30px;
+}
+
+.search-btn {
+  background-color: #ff5e62;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #e04d58;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonials-section p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ff9966;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Adjust DishGenie Image */
+.dishgenie-image {
+  width: 80%;
+  max-width: 60vw; /* Reduce size */
+  display: block;
+  margin: auto;
+}
+
+/* Adjust Name Logo */
+.name {
+  width: 40%; /* Adjust percentage for responsiveness */
+  max-width: 500px; /* Prevent it from being too big */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: auto;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section .col-6 {
+    width: 100%;
+  }
+
+  .feature-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/*REGISTER PAGE STYLES*/
+/* Background & Page Styling */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f7fc; /* Light background */
+  padding: 20px;
+}
+
+/* Card Container */
+.register-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form Title */
+.register-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Form Groups */
+.register-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Labels */
+.register-input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input Fields */
+.register-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.register-input:focus {
+  border-color: #ff5e62;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(255, 94, 98, 0.3);
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #ff5e62;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.register-button:hover {
+  background-color: #e04d58;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+/*LOGIN PAGE STYLES*/
+/* Background & Page Styling */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #eef2f5; /* Light background */
+  padding: 20px;
+}
+
+/* Card Container */
+.login-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form Title */
+.login-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Form Groups */
+.login-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Labels */
+.login-input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input Fields */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.login-input:focus {
+  border-color: #ff5e62;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(255, 94, 98, 0.3);
+}
+
+/* Remember Me */
+.login-remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.login-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #ff5e62;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.login-button:hover {
+  background-color: #e04d58;
+}
+
+/* Forgot Password Link */
+.login-forgot {
+  margin-top: 12px;
+}
+
+.login-forgot-link {
+  color: #ff5e62;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+/*DASHBOARD PAGE STYLES*/
+/* General Styles */
+.dashboard {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Welcome Banner */
+.dashboard-banner {
+  background: linear-gradient(135deg, #ff9a8b, #ff6a88, #ff99ac);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-banner h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-banner p {
+  font-size: 1.2rem;
+}
+
+/* Mood-Based AI Suggestion */
+.dashboard-mood {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.dashboard-mood h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.dashboard-mood-btn {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6a88;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.dashboard-mood-btn:hover {
+  background-color: #e65c79;
+}
+
+/* Search Bar */
+.dashboard-search {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.dashboard-search input {
+  width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.dashboard-search button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #ff6a88;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.dashboard-search button:hover {
+  background-color: #e65c79;
+}
+
+/* Trending Recipes */
+.dashboard-trending {
+  margin-top: 30px;
+}
+
+.dashboard-trending h2 {
+  font-size: 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+.trending-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trending-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trending-card:hover {
+  transform: scale(1.05);
+}
+
+.trending-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.trending-card p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-search input {
+    width: 200px;
+  }
+
+  .trending-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trending-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/*RECIPE PAGE STYLES*/
+/* Add Recipe Page Styling */
+.add-recipe-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#add-recipe-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+#submit-recipe-button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#submit-recipe-button:hover {
+  background-color: #e65c00;
+}
+
+/*RECEIPE FOR A SINGLE RECIPE*/
+.recipe-details-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.recipe-gallery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.recipe-section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.recipe-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+.save-recipe-btn {
+  background-color: #ff4500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.save-recipe-btn:hover {
+  background-color: #d93b00;
+}
+
+/*AI MOOD PAGE STYLES*/
+.mood-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mood-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mood-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mood-question {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.mood-option {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 5px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.mood-option input {
+  margin-right: 10px;
+}
+
+.mood-submit, .mood-reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mood-submit:hover, .mood-reset:hover {
+  background: #e64a19;
+}
+
+.mood-result {
+  text-align: center;
+}
+
+.mood-recipe-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mood-recipe {
+  font-size: 18px;
+  color: #555;
+}
+
+/*Profile css*/
+
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #ff7043;
+}
+
+.profile-username {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.profile-email {
+  font-size: 14px;
+  color: #777;
+}
+
+.profile-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profile-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff7043;
+  padding-bottom: 5px;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 5px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-delete {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.profile-delete:hover {
+  color: darkred;
+}
+
+.profile-empty {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+
+/*bottom navbar */
+/* App.css */
+
+.dashboard {
+  padding-bottom: 56px; /* Space for the bottom navigation */
+}
+
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* SearchPage.css */
+
+.search-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #218838;
+}
+
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-card h3 {
+  padding: 10px;
+  font-size: 16px;
+}
