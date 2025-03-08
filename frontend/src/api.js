@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000", // Your backend URL
+  baseURL: https://dishgenie-project.onrender.com , // Your backend URL
 });
 
 // Attach token to requests (for authenticated routes)
